@@ -38,33 +38,42 @@
 }
 
 .b-project__buttons {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 100%;
+  max-width: 540px;
 
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 40px;
+  gap: 20px;
 }
 
 .b-project__button {
   width: 100%;
 
-  padding: 12px 0;
+  padding: 10px 0;
 
   color: #111;
   outline: 1px solid #111;
-  font-size: 18px;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
 }
 
 .b-project__button--link {
   color: #111;
   text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .b-project__button--linkP {
-  font-size: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
   color: #fff;
   text-decoration: none;
 }
