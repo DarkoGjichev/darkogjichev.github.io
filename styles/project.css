@@ -88,6 +88,10 @@
   outline: 1px solid #CA5757;
 }
 
+.b-project__buttons--mobile {
+  display: none;
+}
+
 .b-project__button--primary:hover {
   background-color: #CA5757;
   border: none;
@@ -233,7 +237,30 @@ iframe {
     font-size: 16px;
   }
 
+
+  
+}
+
+@media only screen and (max-width: 1440px) {
   .b-project__buttons {
-    flex-direction: column;
+    display: none;
+  }
+
+  .b-project__buttons--mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .b-project__button--mobile {
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
   }
 }
