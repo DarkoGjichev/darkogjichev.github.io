@@ -5,76 +5,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/homepage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Rubik:wght@300;400;500;600&display=swap"
     rel="stylesheet">
-  <title>Darko's Portfolio</title>
+  <title>Home</title>
 </head>
 
 <body>
   <header class="b-header">
-    <nav class="b-header__container">
-      <h1 class="b-header__logo"><a class="b-header__text" href="index.html">DG.</a></h1>
-      <button class="b-header__contact"><a class="b-header__text" href="mailto:darkogicev111@gmail.com">Contact
-          me</a></button>
-    </nav>
+    <div class="b-header__wrapper">
+      <div class="b-header__logo"><a href="index.html">DG.</a></div>
+      <button class="b-header__button"><a href="mailto:darkogicev111@gmail.com">Contact me</a></button>
+    </div>
   </header>
 
-  <main>
-    <div class="b-hero">
-      <div class="b-hero__container">
-        <img class="b-hero__avatar" src="/assets/home/1625650779646.jfif" alt="">
-        <h3 class="b-hero__message"><span style="font-size: 13px;">👋</span> HI, MY NAME IS DARKO</h3>
-        <h1 class="b-hero__text">I'M <span style="color: #ca5757;">UX/UI DESIGNER</span> & <span style="color: #577aca;">FRONT-END
-            DEVELOPER</span> BASED IN THE UK</h1>
-      </div>
+  <div class="b-hero">
+    <div class="b-hero__wrapper">
+      <img class="b-hero__avatar" src="/assets/homepage/avatar.png" alt="">
+      <div class="b-hero__title">Hi 👋 my name is Darko,</div>
+      <div class="b-hero__subtitle">I’m UI/UX designer based in the UK. I use human-centered design to create digital
+        products that are intuitive, accessible & good-looking .</div>
     </div>
-  </main>
-
-  <div class="b-main">
-    <div class="b-main__card">
-      <a class="b-main__link" href="vidivaka.html">
-        <img class="b-main__image" src="/assets/home/vidivaka.png" alt="">
-        <div class="b-main__title">VIDIVAKA</div>
-        <p class="b-main__paragraph">Redesign of their existing website ,now fully responsive & giving the website the ability to tell a story.
-        </p>
-      </a>
-    </div>
-    <div class="b-main__card">
-      <a class="b-main__link" href="gallery.html">
-        <img class="b-main__image" src="/assets/home/gallery.png" alt="">
-        <div class="b-main__title">Gallery '94</div>
-        <p class="b-main__paragraph">Full process of UX and UI Design for a brand new e-shop for selling art pieces of any kind.</p>
-      </a>
-    </div>
-    <div class="b-main__card">
-      <a class="b-main__link" href="restaurant.html">
-        <img class="b-main__image" src="/assets/home/restaurant.png" alt="">
-        <div class="b-main__title">RESTAURANT APP</div>
-        <p class="b-main__paragraph">Redesign of their existing website ,now fully responsive & giving the website the ability to tell a story.
-        </p>
+    <div>
+      <a href="#main" class="b-hero__arrows">
+        <div class="b-hero__text">Check out my latest projects</div>
+        <img src="assets/homepage/chevron-down.svg" alt="">
       </a>
     </div>
   </div>
 
+  <main class="b-main" >
+    <div class="b-main__wrapper" id="main">
+
+      <div class="b-main__project">
+        <img class="b-main__image" src="/assets/homepage/restaurant-main.png" alt="Project image">
+        <div class="b-main__content">
+          <div class="b-main__text">
+            <div class="b-main__tag">UX/UI Design / Mobile app</div>
+            <div class="b-main__title">Making your restaurant reservations easy</div>
+            <div class="b-main__subtitle">Full process of UX and UI Design for a brand new restaurant application.</div>
+          </div>
+          <div class="b-main__link"><a href="restaurant.html">View case study <img src="/assets/homepage/arrow-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-main__project">
+        <img class="b-main__image b-main__image--mobile" src="/assets/homepage/gallery-main.png" alt="Project image">
+        <div class="b-main__content">
+          <div class="b-main__text">
+            <div class="b-main__tag">UX/UI Design / Brand new website</div>
+            <div class="b-main__title">Building an e-shop website concept for art lovers</div>
+            <div class="b-main__subtitle">Full process of UX and UI Design for a brand new website.</div>
+          </div>
+          <div class="b-main__link"><a href="gallery.html">View case study <img src="/assets/homepage/arrow-right.svg" alt=""></a>
+          </div>
+        </div>
+        <img class="b-main__image b-main__image--desktop" src="/assets/homepage/gallery-main.png" alt="Project image">
+      </div>
+
+      <div class="b-main__project">
+        <img class="b-main__image" src="/assets/homepage/vidivaka-main.png" alt="Project image">
+        <div class="b-main__content">
+          <div class="b-main__text">
+            <div class="b-main__tag">UX/UI Design / Redesign</div>
+            <div class="b-main__title">Adaptation to new target groups</div>
+            <div class="b-main__subtitle">Redesign of existing website with more storytelling ability.</div>
+          </div>
+          <div class="b-main__link"><a href="vidivaka.html">View case study <img src="/assets/homepage/arrow-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
   <footer class="b-footer">
-    <h1 class="b-footer__title">LETS WORK TOGETHER</h1>
-    <h3 class="b-footer__text">Get in touch for opportunities or just to say hi!</h3>
-    <ul class="b-footer__socials">
-      <li><a href="mailto:darkogicev111@gmail.com" target=”_blank”><img src="/assets/footer/envelope.svg"
-            alt="Mail"></a></li>
-      <li><a href="https://www.behance.net/darkogicev" target=”_blank”><img src="/assets/footer/behance.svg"
-            alt="Behance"></a></li>
-      <li><a href="https://www.linkedin.com/in/darko-gicev-778359203/" target=”_blank”><img
-            src="/assets/footer/linkedin.svg" alt="Linkedin"></a></li>
-      <li><a href="https://github.com/DarkoGjichev" target=”_blank”><img src="/assets/footer/github.svg"
-            alt="Github"></a></li>
-    </ul>
-    <h6 class="b-footer__credit">Copyright © 2021 Darko Gicev. All Rights Reserved.</h6>
+    <div class="b-footer__wrapper">
+      <div class="b-footer__title">LETS WORK TOGETHER</div>
+      <div class="b-footer__subtitle">Get in touch for opportunities or just to say hi!</div>
+      <div class="b-footer__socials">
+        <a class="b-footer__link" target=”_blank” href="mailto:darkogicev111@gmail.com"><img
+            src="/assets/homepage/envelope.svg" alt="Mail"></a>
+        <a class="b-footer__link" target=”_blank” href="https://www.behance.net/darkogicev"><img
+            src="/assets/homepage/behance.svg" alt="Behance Account"></a>
+        <a class="b-footer__link" target=”_blank” href="https://www.linkedin.com/in/darko-gicev-778359203/"><img
+            src="/assets/homepage/linkedin.svg" alt="Linkedin Account"></a>
+        <a class="b-footer__link" target=”_blank” href="https://github.com/DarkoGjichev"><img
+            src="/assets/homepage/github.svg" alt="Github Account"></a>
+      </div>
+      <div class="b-footer__credit">Designed and coded with ♥ by me</div>
+    </div>
   </footer>
 
 </body>
